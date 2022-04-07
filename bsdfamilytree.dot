@@ -1,0 +1,188 @@
+digraph unix_bsd_tree {
+  rankdir=TB
+  node [shape=oval]
+  v1   [label="First Edition (V1)\n1971-11-03",color=blue]
+  v2   [label="Second Edition (V2)\n1972-06-12",color=blue]
+  v3   [label="Third Edition (V3)\n1973-02-xx",color=blue]
+  v4   [label="Forth Edition (V4)\n1973-11-xx",color=blue]
+  v5   [label="Fifth Edition (V5)\n1974-06-xx",color=blue]
+  v6   [label="Sixth Edition (V6)\n1975-05-xx",color=blue]
+  v7   [label="Seventh Edition (V7)\n1979-01-10",color=blue]
+  v8   [label="Eighth Edition (V8)\n1985-02-xx",color=blue]
+  v9   [label="Ninth Edition (V9)\n1986-09-xx",color=blue]
+  v10  [label="Tenth Edition (V10)\n1989-10-xx",color=blue]
+  {rank = same; v7; _2BSD;}
+  {rank = same; v8; _2_9BSD_Seismo;}
+  {rank = same; v9; _4_3BSD; } 
+  _1BSD              [label="1BSD\n1978-01-16\nor 1978-03-09"]
+  _2BSD              [label="2BSD\n mid 1978\nor 1979-05-10"]
+  _2_79BSD           [label="2.79BSD\n1980-04-xx"]
+  {rank = same; _2_79BSD; _3BSD;}
+  _2_8BSD            [label="2.8BSD\n1981-07-xx"]
+  {rank = same; _2_8BSD; _4_1BSD;} 
+#  _2_8_1BSD         [label="2.8.1BSD\n1982-01-xx"]
+  _2_9BSD            [label="2.9BSD\n1983-07-xx"]
+  {rank = same; _2_9BSD; _4_2BSD;}
+  _2_9_1BSD          [label="2.91BSD\n1983-11-xx"]
+  _2_9BSD_Seismo     [label="2.9BSD-Seismo\n1985-08-xx"]
+  _2_10BSD           [label="2.10BSD\n1987-04-xx"]
+  _2_10_1BSD         [label="2.10.1BSD\n1989-01-xx"]
+  {rank = same; _2_10_1BSD; _4_3BSD_NET1;}
+  _2_11BSD           [label="2.11BSD\n1991-03-14"]
+  {rank = same; _2_11BSD; _4_3BSD_NET2; }
+  _2_11BSDrev430     [label="2.11BSD rev #430\n1999-12-13"]
+  _32v               [label="32v\n1978-01-xx\nor 1979-03-26"]
+  _3BSD              [label="3BSD\nlate 1979\n1980-03-xx"]
+  _4_0BSD            [label="4.0BSD\n1980-10-xx"]
+  _4_1BSD            [label="4.1BSD\n1981-07-08"]
+  _4_1aBSD           [label="4.1aBSD\n1982-04-xx"]
+  _4_1bBSD           [label="4.1bBSD"]
+  _4_1cBSD           [label="4.1cBSD\nlate 1982"]
+  _4_2BSD            [label="4.2BSD\n1983-09-xx"]
+  _4_3BSD            [label="4.3BSD\n1986-04-05\nor 1986-06-xx"]
+  _4_3BSDTa          [label="4.3BSD Tahoe\n1988-06-15"]
+  _4_3BSD_NET1       [label="4.3BSD NET/1\n1988-11-xx\nor 1989-01-01"]
+  _4_3BSD_Reno       [label="4.3BSD Reno\n1990-06-29"]
+  _4_3BSD_NET2       [label="4.3BSD NET/2\n1991-06-28"]
+
+  BSD386A            [label="BSD/386 ALPHA\n1991-12-xx"]
+  _386BSD_0_0        [label="386BSD 0.0\n1992-02-xx"]
+  BSD386_0_3_1       [label="BSD/386 0.3.1\n1992-04-xx"]
+  BSD386_0_3_3       [label="BSD/386 0.3.3\n1992-06-xx"]
+  _386BSD_0_1        [label="386BSD 0.1\n1992-07-28"]
+  _4_4BSDA           [label="4.4BSD Alpha\n1992-07-07"]
+  BSD386_0_9_3       [label="BSD/386 0.9.3\n1992-10-xx"]
+  BSD386_0_9_4       [label="BSD/386 0.9.4\n1992-12-xx"]
+  
+  BSD386_1_0         [label="BSD/386 1.0\n1993-03-xx"]
+  NetBSD_0_8         [label="NetBSD 0.8\n1993-04-20"]
+  _4_4BSD            [label="4.4BSD\n1993-06-01"]
+  NetBSD_0_9         [label="NetBSD 0.9\n1993-08-23"]
+  {rank = same; BSD386_1_0; NetBSD_0_8}
+  {rank = same; _4_4BSD; NetBSD_0_9;}
+  FreeBSD_1_0        [label="FreeBSD 1.0\n1993-11-01"]
+#  FreeBSD_1_0_2             [label="FreeBSD 1.0.2\n1993-11-14"]
+  BSD386_1_1         [label="BSD/386 1.1\n1994-02-xx"]
+  _4_4BSDLite        [label="4.4BSD Lite\n1994-03-01"]
+  FreeBSD_1_1        [label="FreeBSD 1.1\n1994-05-07"]
+  FreeBSD_1_1_5      [label="FreeBSD 1.1.5\n1994-06-30"]
+  FreeBSD_1_1_5_1    [label="FreeBSD 1.1.5.1\n1994-07-05"]
+  NetBSD_1_0         [label="NetBSD 1.0\n1994-10-26"]
+  _386BSD_1_0        [label="386BSD 1.0\n1994-11-12"]
+  FreeBSD_2_0        [label="FreeBSD 2.0\n1994-11-23"]
+  {rank = same; NetBSD_1_0; _386BSD_1_0; FreeBSD_2_0; }
+  BSD_OS_2_0         [label="BSD/OS 2.0\n1995-01-xx"]
+  FreeBSD_2_0_5      [label="FreeBSD 2.0.5\n1995-06-10"]
+  BSD_OS_2_0_1       [label="BSD/OS 2.0.1\n1995-06-xx"]
+  _4_4BSDLiteR2      [label="4.4BSD Lite Release 2\n1995-06-xx\nthe true final distribution\n from the CSRG"]
+  FreeBSD_2_1	     [label="FreeBSD 2.1\n1995-11-19"]
+  NetBSD_1_1	     [label="NetBSD 1.1\n1995-11-26"]
+  {rank = same; FreeBSD_2_1; NetBSD_1_1;}
+  BSD_OS_2_1	     [label="BSD/OS 2.1\n1996-01-xx"]
+  FreeBSD_2_1_5	     [label="FreeBSD 2.1.5\n1996-07-14"]
+  NetBSD_1_2	     [label="NetBSD 1.2\n1996-10-04"]
+  OpenBSD_2_0	     [label="OpenBSD 2.0\n1996-10-18"]
+  {rank = same; NetBSD_1_2; OpenBSD_2_0;}
+  FreeBSD_2_1_6	     [label="FreeBSD 2.1.6\n1996-11-16"]
+  FreeBSD_2_1_6_1    [label="FreeBSD 2.1.6.1\n1996-11-25"]
+  Rhapsody	     [label="Rapsody\n1997-xx-xx"]
+  FreeBSD_2_1_7	     [label="FreeBSD 2.1.7\n1997-02-20"]
+  BSD_OS_3_0	     [label="BSD/OS 3.0\n1997-02-xx"]
+  {rank = same; FreeBSD_2_1_7; BSD_OS_3_0;}
+  FreeBSD_2_2	     [label="FreeBSD 2.2\n1997-03-16"]
+  FreeBSD_2_2_1	     [label="FreeBSD 2.2.1\n1997-03-25"]
+  FreeBSD_2_2_2	     [label="FreeBSD 2.2.2\n1997-05-16"]
+  NetBSD_1_2_1	     [label="NetBSD 1.2.1\n1997-05-20"]
+  {rank = same; FreeBSD_2_2_2; NetBSD_1_2_1;}
+  OpenBSD_2_1	     [label="OpenBSD 2.1\n1997-06-01"]
+  FreeBSD_2_2_5	     [label="FreeBSD 2.2.5\n1997-10-22"]
+  OpenBSD_2_2	     [label="OpenBSD 2.2\n1997-12-01"]
+  NetBSD_1_3	     [label="NetBSD 1.3\n1998-01-04"]
+  FreeBSD_2_2_6	     [label="FreeBSD 2.2.6\n1998-03-25"]
+  NetBSD_1_3_1	     [label="NetBSD 1.3.1\n1998-03-09"]
+  BSD_OS_3_1	     [label="BSD/OS 3.1\n1998-03-xx"]
+  {rank = same; FreeBSD_2_2_6; NetBSD_1_3_1; BSD_OS_3_1;}
+  OpenBSD_2_3	     [label="OpenBSD 2.3\n1998-05-19"]
+  NetBSD_1_3_2	     [label="NetBSD 1.3.2\n1998-05-29"]
+  {rank = same; OpenBSD_2_3; NetBSD_1_3_2;}
+  FreeBSD_2_2_7	     [label="FreeBSD 2.2.7\n1998-07-22"]
+  BSD_OS_4_0	     [label="BSD/OS 4.0\n1998-08-xx"]
+  FreeBSD_3_0	     [label="FreeBSD 3.0\n1998-10-16"]
+
+  FreeBSD_2_2_8	     [label="FreeBSD 2.2.8\n1998-11-29"]
+  OpenBSD_2_4	     [label="OpenBSD 2.4\n1998-12-01"]
+  NetBSD_1_3_3	     [label="NetBSD 1.3.3\n1998-12-23"]
+  {rank = same; FreeBSD_2_2_8; OpenBSD_2_4; NetBSD_1_3_3;}
+  FreeBSD_3_1	     [label="FreeBSD 3.1\n1999-02-15"]
+  BSD_OS_4_0_1	     [label="BSD/OS 4.0.1\n1999-03-xx"]
+  NetBSD_1_4	     [label="NetBSD 1.4\n1999-05-12"]
+  FreeBSD_3_2	     [label="FreeBSD 3.2\n1999-05-17"]
+  OpenBSD_2_5	     [label="OpenBSD 2.5\n1999-05-19"]
+  {rank = same; NetBSD_1_4; FreeBSD_3_2; OpenBSD_2_5;}
+  NetBSD_1_4_1	     [label="NetBSD 1.4.1\n1999-08-26"]
+  FreeBSD_3_3	     [label="FreeBSD 3.3\n1999-09-17"]
+  OpenBSD_2_6	     [label="OpenBSD 2.6\n1999-12-01"]
+  FreeBSD_3_4	     [label="FreeBSD 3.4\n1999-12-20"]
+  BSD_OS_4_1	     [label="BSD/OS 4.1\n1999-12-xx"]
+  {rank = same; FreeBSD_3_3; OpenBSD_2_6; BSD_OS_4_1;}
+  FreeBSD_4_0	     [label="FreeBSD 4.0\n2000-03-13"]
+  NetBSD_1_4_2	     [label="NetBSD 1.4.2\n2000-03-19"]
+  {rank = same; FreeBSD_4_0; NetBSD_1_4_2;}
+  OpenBSD_2_7	     [label="OpenBSD 2.7\n2000-06-15"]
+  FreeBSD_3_5	     [label="FreeBSD 3.5\n2000-06-24"]
+  {rank = same; OpenBSD_2_7; FreeBSD_3_5;}
+  FreeBSD_4_1	     [label="FreeBSD 4.1\n2000-07-27"]
+  FreeBSD_3_5_1	     [label="FreeBSD 3.5.1\n2000-07-28"]
+  FreeBSD_4_1_1	     [label="FreeBSD 4.1.1\n2000-09-25"]
+  FreeBSD_4_2	     [label="FreeBSD 4.2\n2000-11-21"]
+  NetBSD_1_4_3	     [label="NetBSD 1.4.3\n2000-11-25"]
+  BSD_OS_4_2	     [label="BSD/OS 4.2\n2000-11-29"]
+  {rank = same; FreeBSD_4_2; NetBSD_1_4_3; BSD_OS_4_2;}  
+  OpenBSD_2_8	     [label="OpenBSD 2.8\n2000-12-01"]
+  NetBSD_1_5	     [label="NetBSD 1.5\n2000-12-06"]
+
+
+  v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
+  _4_1cBSD -> v8 -> v9 -> v10
+  v6 -> _1BSD -> _2BSD -> _2_79BSD -> _2_8BSD -> _2_9BSD -> _2_9_1BSD -> _2_9BSD_Seismo -> _2_10BSD -> _2_10_1BSD -> _2_11BSD -> _2_11BSDrev430
+  _2BSD -> _3BSD
+  v7 -> _2_8BSD
+  v7 -> _32v -> _3BSD -> _4_0BSD -> _4_1BSD -> _4_1aBSD -> _4_1bBSD -> _4_1cBSD -> _4_2BSD -> _4_3BSD -> _4_3BSDTa -> _4_3BSD_NET1 -> _4_3BSD_Reno -> _4_3BSD_NET2
+  _4_1BSD -> _2_8BSD
+  _4_1aBSD -> _2_9BSD
+  _4_2BSD -> v9
+  _4_3BSD -> v9
+  _4_3BSD -> _2_10BSD
+  _2_10BSD -> _4_3BSDTa
+  _4_3BSDTa -> _2_11BSD
+
+  _4_3BSD_NET2 -> _386BSD_0_0 -> _386BSD_0_1 -> FreeBSD_1_0
+  _386BSD_0_1 -> NetBSD_0_8
+  _386BSD_0_1 -> _386BSD_1_0
+  _4_3BSD_NET2 -> _4_4BSDA -> _4_4BSD -> _4_4BSDLite -> _4_4BSDLiteR2
+  _4_3BSD_NET2 -> BSD386A -> BSD386_0_3_1 -> BSD386_0_3_3 -> BSD386_0_9_3 -> BSD386_0_9_4 -> BSD386_1_0 -> BSD386_1_1 -> BSD_OS_2_0
+  NetBSD_0_8 -> FreeBSD_1_0
+  FreeBSD_1_0 -> FreeBSD_1_1 -> FreeBSD_1_1_5 -> FreeBSD_1_1_5_1 -> FreeBSD_2_0 -> FreeBSD_2_0_5 -> FreeBSD_2_1
+  NetBSD_0_8 -> NetBSD_0_9 -> NetBSD_1_0
+  _4_4BSDLite -> FreeBSD_2_0
+  _4_4BSDLite -> NetBSD_1_0
+  _4_4BSDLite -> BSD_OS_2_0
+  _4_4BSDLiteR2 -> Rhapsody
+  _4_4BSDLiteR2 -> NetBSD_1_3
+  _4_4BSDLiteR2 -> OpenBSD_2_3
+  _4_4BSDLiteR2 -> BSD_OS_3_0
+  _4_4BSDLiteR2 -> FreeBSD_3_0
+  FreeBSD_2_1 -> FreeBSD_2_1_5 -> FreeBSD_2_1_6 -> FreeBSD_2_1_6_1 -> FreeBSD_2_1_7 -> FreeBSD_2_1_7_1
+  FreeBSD_2_1 -> FreeBSD_2_2
+  NetBSD_1_0 -> NetBSD_1_1 -> NetBSD_1_2 -> NetBSD_1_2_1
+  NetBSD_1_1 -> OpenBSD_2_0 -> OpenBSD_2_1 -> OpenBSD_2_2 -> OpenBSD_2_3
+  NetBSD_1_2 -> NetBSD_1_3 -> NetBSD_1_3_1 -> NetBSD_1_3_2 -> NetBSD_1_3_3
+  BSD_OS_2_0 -> BSD_OS_2_0_1 -> BSD_OS_2_1 -> BSD_OS_3_0 -> BSD_OS_3_1 
+  FreeBSD_2_2 -> FreeBSD_2_2_1 -> FreeBSD_2_2_2 -> FreeBSD_2_2_5 -> FreeBSD_2_2_6 -> FreeBSD_2_2_7 -> FreeBSD_2_2_8
+  FreeBSD_2_2 -> FreeBSD_3_0 -> FreeBSD_3_1 -> FreeBSD_3_2 -> FreeBSD_3_3 -> FreeBSD_3_4 -> FreeBSD_3_5 -> FreeBSD_3_5_1
+  OpenBSD_2_3 -> OpenBSD_2_4 -> OpenBSD_2_5 -> OpenBSD_2_6 -> OpenBSD_2_7 -> OpenBSD_2_8
+  NetBSD_1_3 -> NetBSD_1_4 -> NetBSD_1_4_1 -> NetBSD_1_4_2 -> NetBSD_1_4_3
+  BSD_OS_3_1 -> BSD_OS_4_0 -> BSD_OS_4_0_1 -> BSD_OS_4_1 -> BSD_OS_4_2
+  FreeBSD_3_0 -> FreeBSD_4_0 -> FreeBSD_4_1 -> FreeBSD_4_1_1 -> FreeBSD_4_2 -> FreeBSD_4_3
+  NetBSD_1_4 -> NetBSD_1_5
+}
