@@ -87,6 +87,7 @@ digraph unix_bsd_tree {
   FreeBSD_2_1_6_1    [label="FreeBSD 2.1.6.1\n1996-11-25"]
   Rhapsody	     [label="Rapsody\n1997-xx-xx"]
   FreeBSD_2_1_7	     [label="FreeBSD 2.1.7\n1997-02-20"]
+  FreeBSD_2_1_7_1    [label="FreeBSD 2.1.7.1"]
   BSD_OS_3_0	     [label="BSD/OS 3.0\n1997-02-xx"]
   {rank = same; FreeBSD_2_1_7; BSD_OS_3_0;}
   FreeBSD_2_2	     [label="FreeBSD 2.2\n1997-03-16"]
