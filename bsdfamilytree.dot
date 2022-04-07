@@ -183,6 +183,6 @@ digraph unix_bsd_tree {
   OpenBSD_2_3 -> OpenBSD_2_4 -> OpenBSD_2_5 -> OpenBSD_2_6 -> OpenBSD_2_7 -> OpenBSD_2_8
   NetBSD_1_3 -> NetBSD_1_4 -> NetBSD_1_4_1 -> NetBSD_1_4_2 -> NetBSD_1_4_3
   BSD_OS_3_1 -> BSD_OS_4_0 -> BSD_OS_4_0_1 -> BSD_OS_4_1 -> BSD_OS_4_2
-  FreeBSD_3_0 -> FreeBSD_4_0 -> FreeBSD_4_1 -> FreeBSD_4_1_1 -> FreeBSD_4_2 -> FreeBSD_4_3
+  FreeBSD_3_0 -> FreeBSD_4_0 -> FreeBSD_4_1 -> FreeBSD_4_1_1 -> FreeBSD_4_2
   NetBSD_1_4 -> NetBSD_1_5
 }
