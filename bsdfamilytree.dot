@@ -142,6 +142,80 @@ digraph unix_bsd_tree {
   OpenBSD_2_8	     [label="OpenBSD 2.8\n2000-12-01"]
   NetBSD_1_5	     [label="NetBSD 1.5\n2000-12-06"]
 
+  MacOSX_10_0	     [label="Darwin/MacOS X 10.0\n2001-03-24"]
+  FreeBSD_4_3	     [label="FreeBSD 4.3\n2001-04-20"]
+  {rank = same; MacOSX_10_0; FreeBSD_4_3;}  
+  OpenBSD_2_9	     [label="OpenBSD 2.9\n2001-06-01"]
+  NetBSD_1_5_1	     [label="NetBSD 1.5.1\n2001-07-11"]
+  NetBSD_1_5_2	     [label="NetBSD 1.5.2\n2001-09-13"]
+  FreeBSD_4_4	     [label="FreeBSD 4.4\n2001-09-18"]
+  MacOSX_10_1	     [label="MacOS X 10.1\n2001-09-29"]
+  {rank = same; NetBSD_1_5_2; FreeBSD_4_4; MacOSX_10_1;}  
+  OpenBSD_3_0	     [label="OpenBSD 3.0\n2001-12-01"]
+  FreeBSD_4_5	     [label="FreeBSD 4.5\n2002-01-29"]
+  BSD_OS_4_3	     [label="BSD/OS 4.3\n2002-03-14"]
+  OpenBSD_3_1	     [label="OpenBSD 3.1\n2002-05-19"]
+  FreeBSD_4_6	     [label="FreeBSD 4.6\n2002-06-15"]
+  {rank = same; OpenBSD_3_1; FreeBSD_4_6;}  
+  NetBSD_1_5_3	     [label="NetBSD 1.5.2\n2001-07-22"]
+  FreeBSD_4_6_2	     [label="FreeBSD 4.6.2\n2002-08-15"]
+  MacOSX_10_2	     [label="MacOS X 10.2\n2002-08-23"]
+  {rank = same; FreeBSD_4_6; MacOSX_10_2;}  
+  NetBSD_1_6	     [label="NetBSD 1.6\n2002-09-14"]
+  FreeBSD_4_7	     [label="FreeBSD 4.7\n2002-10-08"]
+  OpenBSD_3_2	     [label="OpenBSD 3.2\n2002-11-01"]
+  FreeBSD_5_0	     [label="FreeBSD 5.0\n2003-01-17"]
+  FreeBSD_4_8	     [label="FreeBSD 4.7\n2003-04-03"]
+  NetBSD_1_6_1	     [label="NetBSD 1.6.1\n2003-04-21"]
+  OpenBSD_3_3	     [label="OpenBSD 3.3\n2003-05-01"]
+  BSD_OS_5_0	     [label="BSD/OS 5.0\n2003-05-??"]
+  {rank = same; OpenBSD_3_3; BSD_OS_5_0;}
+  FreeBSD_5_1	     [label="FreeBSD 5.1\n2003-06-04"]
+  MacOSX_10_3	     [label="MacOS X 10.3\n2003-10-24"]
+  FreeBSD_4_9	     [label="FreeBSD 4.9\n2003-10-28"]
+  BSD_OS_5_1	     [label="BSD/OS 5.1 ISE\n2003-10-??\nfinal version"]
+  {rank = same; FreeBSD_4_9; BSD_OS_5_1;}
+  OpenBSD_3_4	     [label="OpenBSD 3.4\n2003-11-01"]
+  FreeBSD_5_2	     [label="FreeBSD 5.2\n2004-01-12"]
+  FreeBSD_5_2_1	     [label="FreeBSD 5.2.1\n2004-02-22"]
+  NetBSD_1_6_2	     [label="NetBSD 1.6.2\n2004-03-01"]
+  {rank = same; FreeBSD_5_2_1; NetBSD_1_6_1;}
+  OpenBSD_3_5	     [label="OpenBSD 3.5\n2004-04-01"]
+  FreeBSD_4_10	     [label="FreeBSD 4.10\n2004-5-27"]
+  DragonFly_1_0	     [label="DragonFly 1.0\n2004-07-12"]
+  OpenBSD_3_6	     [label="OpenBSD 3.6\n2004-10-29"]
+  FreeBSD_5_3	     [label="FreeBSD 5.3\n2004-11-06"]
+  NetBSD_2_0	     [label="NetBSD 2.0\n2004-12-09"]
+  {rank = same; OpenBSD_3_6;FreeBSD_5_3; NetBSD_2_0;}
+  FreeBSD_4_11	     [label="FreeBSD 4.11\n2005-01-25"]
+  DragonFly_1_2_0    [label="DragonFly 1.2.0\n2005-04-08"]
+  NetBSD_2_0_2	     [label="NetBSD 2.0.2\n2005-04-14"]
+  {rank = same; DragonFly_1_2_0; NetBSD_2_0_2;}
+  MacOSX_10_4	     [label="MacOS X 10.4\n2005-04-29"]
+  FreeBSD_5_4	     [label="FreeBSD 5.4\n2005-05-09"]
+  OpenBSD_3_7	     [label="OpenBSD 3.7\n2004-05-19"]
+  {rank = same; MacOSX_10_4; FreeBSD_5_4; OpenBSD_3_7}
+  NetBSD_2_0_3	     [label="NetBSD 2.0.3\n2005-10-31"]
+  OpenBSD_3_8	     [label="OpenBSD 3.8\n2005-11-01"]
+  FreeBSD_6_0	     [label="FreeBSD 6.0\n2005-11-01"]
+  NetBSD_2_1	     [label="NetBSD 2.1\n2005-11-02"]
+  {rank = same; NetBSD_2_0_3; OpenBSD_3_8; FreeBSD_6_0; NetBSD_2_1;}
+  NetBSD_3_0	     [label="NetBSD 3.0\n2005-11-02"]
+  DragonFly_1_4_0    [label="DragonFly 1.4.0\n2006-01-08"]
+  FreeBSD_2_2_9	     [label="FreeBSD 2.2.9\n2006-04-01"]
+  OpenBSD_3_9	     [label="OpenBSD 3.9\n2006-05-01"]
+  FreeBSD_6_1	     [label="FreeBSD 6.1\n2006-05-08"]
+  FreeBSD_5_5	     [label="FreeBSD 5.5\n2006-05-25"]
+  {rank = same; OpenBSD_3_9; FreeBSD_6_1; FreeBSD_5_5;}
+  NetBSD_3_0_1	     [label="NetBSD 3.0.1\n2006-07-24"]
+  DragonFly_1_6_0    [label="DragonFly 1.6.0\n2006-07-24"]
+  {rank = same; NetBSD_3_0_1; DragonFly_1_6_0;}
+  OpenBSD_4_0	     [label="OpenBSD 4.0\n2006-11-01"]
+  NetBSD_3_0_2	     [label="NetBSD 3.0.2\n2006-11-04"]
+  NetBSD_3_1	     [label="NetBSD 3.1\n2006-11-04"]
+  {rank = same; OpenBSD_4_0; NetBSD_3_0_2; NetBSD_3_1;}
+  
+  
 
   v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
   _4_1cBSD -> v8 -> v9 -> v10
@@ -179,11 +253,31 @@ digraph unix_bsd_tree {
   NetBSD_1_1 -> OpenBSD_2_0 -> OpenBSD_2_1 -> OpenBSD_2_2 -> OpenBSD_2_3
   NetBSD_1_2 -> NetBSD_1_3 -> NetBSD_1_3_1 -> NetBSD_1_3_2 -> NetBSD_1_3_3
   BSD_OS_2_0 -> BSD_OS_2_0_1 -> BSD_OS_2_1 -> BSD_OS_3_0 -> BSD_OS_3_1 
-  FreeBSD_2_2 -> FreeBSD_2_2_1 -> FreeBSD_2_2_2 -> FreeBSD_2_2_5 -> FreeBSD_2_2_6 -> FreeBSD_2_2_7 -> FreeBSD_2_2_8
+  FreeBSD_2_2 -> FreeBSD_2_2_1 -> FreeBSD_2_2_2 -> FreeBSD_2_2_5 -> FreeBSD_2_2_6 -> FreeBSD_2_2_7 -> FreeBSD_2_2_8 -> FreeBSD_2_2_9
   FreeBSD_2_2 -> FreeBSD_3_0 -> FreeBSD_3_1 -> FreeBSD_3_2 -> FreeBSD_3_3 -> FreeBSD_3_4 -> FreeBSD_3_5 -> FreeBSD_3_5_1
   OpenBSD_2_3 -> OpenBSD_2_4 -> OpenBSD_2_5 -> OpenBSD_2_6 -> OpenBSD_2_7 -> OpenBSD_2_8
   NetBSD_1_3 -> NetBSD_1_4 -> NetBSD_1_4_1 -> NetBSD_1_4_2 -> NetBSD_1_4_3
   BSD_OS_3_1 -> BSD_OS_4_0 -> BSD_OS_4_0_1 -> BSD_OS_4_1 -> BSD_OS_4_2
   FreeBSD_3_0 -> FreeBSD_4_0 -> FreeBSD_4_1 -> FreeBSD_4_1_1 -> FreeBSD_4_2
   NetBSD_1_4 -> NetBSD_1_5
+  FreeBSD_3_2 -> MacOSX_10_0
+  Rhapsody -> MacOSX_10_0
+  NetBSD_1_4 -> MacOSX_10_0
+  FreeBSD_4_2 -> FreeBSD_4_3 ->FreeBSD_4_4 -> FreeBSD_4_5 -> FreeBSD_4_6 -> FreeBSD_4_6_2 -> FreeBSD_4_7 -> FreeBSD_4_8 -> FreeBSD_4_9 -> FreeBSD_4_10 -> FreeBSD_4_11
+  FreeBSD_4_1 -> FreeBSD_5_0 -> FreeBSD_5_1 -> FreeBSD_5_2 -> FreeBSD_5_2_1
+  FreeBSD_5_2 -> FreeBSD_5_3 -> FreeBSD_5_4 -> FreeBSD_5_5
+  FreeBSD_5_3 -> FreeBSD_6_0 -> FreeBSD_6_1
+  MacOSX_10_0 -> MacOSX_10_1 -> MacOSX_10_2 -> MacOSX_10_3 -> MacOSX_10_4
+  FreeBSD_5_1 -> MacOSX_10_3
+  NetBSD_1_5 -> NetBSD_1_5_1 -> NetBSD_1_5_2 -> NetBSD_1_5_3
+  NetBSD_1_5 -> NetBSD_1_6 -> NetBSD_2_0
+  NetBSD_1_6 -> NetBSD_1_6_1 -> NetBSD_1_6_2
+  NetBSD_2_0 -> NetBSD_2_0_2 -> NetBSD_2_0_3
+  NetBSD_2_0 -> NetBSD_2_1
+  NetBSD_2_0 -> NetBSD_3_0 -> NetBSD_3_0_1 -> NetBSD_3_0_2
+  BSD_OS_4_2 -> BSD_OS_4_3 -> BSD_OS_5_0 -> BSD_OS_5_1
+  FreeBSD_4_8 -> DragonFly_1_0 -> DragonFly_1_2_0 -> DragonFly_1_4_0 -> DragonFly_1_6_0
+  OpenBSD_2_8 -> OpenBSD_2_9 -> OpenBSD_3_0 -> OpenBSD_3_1 -> OpenBSD_3_2 -> OpenBSD_3_3 -> OpenBSD_3_4 -> OpenBSD_3_5 -> OpenBSD_3_6 -> OpenBSD_3_7 -> OpenBSD_3_8 -> OpenBSD_3_9 -> OpenBSD_4_0
+  NetBSD_3_0 -> NetBSD_3_1
+  
 }
