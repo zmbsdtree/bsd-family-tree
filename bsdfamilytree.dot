@@ -411,11 +411,13 @@ digraph unix_bsd_tree {
   OpenBSD_6_9	     [label="OpenBSD 6.9\n2021-05-01"]
   DragonFly_6_0      [label="DragonFly 6.0\n2021-05-08"]
   NetBSD_9_2	     [label="NetBSD 9.2\n2021-5-12"]
-  {rank = same; OpenBSD_6_9; DragonFly_6_0; NetBSD_9_2; }
+  {rank = same; FreeBSD_13_0; OpenBSD_6_9; DragonFly_6_0; NetBSD_9_2; }
   OpenBSD_7_0	     [label="OpenBSD 7.0\n2021-10-14"]
   macOS_12	     [label="macOS 12\n2021-10-25"]
+  {rank = same; OpenBSD_7_0; macOS_12; }
   FreeBSD_12_3	     [label="FreeBSD 12.3\n2021-12-01"]
   DragonFly_6_2_1    [label="DragonFly 6.2.1\n2022-01-09"]
+  {rank = same; FreeBSD_12_3; DragonFly_6_2_1; }
 
   FreeBSD_current    [label="FreeBSD 14 -current"]
   NetBSD_current     [label="NetBSD -current"]
