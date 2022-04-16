@@ -424,7 +424,7 @@ digraph unix_bsd_tree {
   OpenBSD_current    [label="OpenBSD -current"]
   DragonFly_current  [label="DragonFly -current"]
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
-  
+
 v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
   _4_1cBSD -> v8 -> v9 -> v10
   v6 -> _1BSD -> _2BSD -> _2_79BSD -> _2_8BSD -> _2_9BSD -> _2_9_1BSD -> _2_9BSD_Seismo -> _2_10BSD -> _2_10_1BSD -> _2_11BSD -> _2_11BSDrev430
@@ -527,5 +527,4 @@ v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
   DragonFly_5_2_0 -> DragonFly_5_2_1 -> DragonFly_5_2_2
   DragonFly_5_2_2 -> DragonFly_5_4_0 -> DragonFly_5_4_1 -> DragonFly_5_6 -> DragonFly_5_6_1 -> DragonFly_5_6_2 -> DragonFly_5_8
   DragonFly_5_8 -> DragonFly_5_6_3 -> DragonFly_5_8_1 -> DragonFly_5_8_2 -> DragonFly_5_8_3 -> DragonFly_6_0 -> DragonFly_6_2_1 -> DragonFly_current
-
 }
