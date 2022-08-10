@@ -410,7 +410,7 @@ digraph unix_bsd_tree {
   FreeBSD_13_0	     [label="FreeBSD 13.0\n2021-04-13"]
   OpenBSD_6_9	     [label="OpenBSD 6.9\n2021-05-01"]
   DragonFly_6_0      [label="DragonFly 6.0\n2021-05-08"]
-  NetBSD_9_2	     [label="NetBSD 9.2\n2021-5-12"]
+  NetBSD_9_2	     [label="NetBSD 9.2\n2021-05-12"]
   {rank = same; FreeBSD_13_0; OpenBSD_6_9; DragonFly_6_0; NetBSD_9_2; }
   OpenBSD_7_0	     [label="OpenBSD 7.0\n2021-10-14"]
   macOS_12	     [label="macOS 12\n2021-10-25"]
@@ -419,6 +419,8 @@ digraph unix_bsd_tree {
   DragonFly_6_2_1    [label="DragonFly 6.2.1\n2022-01-09"]
   FreeBSD_13_1	     [label="FreeBSD 13.1\n2022-05-17"]
   {rank = same; FreeBSD_12_3; DragonFly_6_2_1; FreeBSD_13_1 }
+  DragonFly_6_2_2    [label="DragonFly 6.2.2\n2022-06-09"]
+  NetBSD_9_3	     [label="NetBSD 9.3\n2022-08-04"]
 
   FreeBSD_current    [label="FreeBSD 14 -current"]
   NetBSD_current     [label="NetBSD -current"]
@@ -504,7 +506,7 @@ v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
   NetBSD_7_0 -> NetBSD_7_1 -> NetBSD_7_2
   NetBSD_7_1 -> NetBSD_7_1_1 -> NetBSD_7_1_2
   NetBSD_8_0 -> NetBSD_8_1 -> NetBSD_8_2
-  NetBSD_9_0 -> NetBSD_9_1 -> NetBSD_9_2
+  NetBSD_9_0 -> NetBSD_9_1 -> NetBSD_9_2 -> NetBSD_9_3
   NetBSD_8_0 -> NetBSD_9_0 -> NetBSD_current
   OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
   DragonFly_1_6_0 -> DragonFly_1_8_0 -> DragonFly_1_10_0 -> DragonFly_1_12_0 -> DragonFly_2_0_0 -> DragonFly_2_2_0 -> DragonFly_2_4_0 -> DragonFly_2_6_0
@@ -527,5 +529,5 @@ v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
   DragonFly_5_0_0 ->  DragonFly_5_0_1 ->  DragonFly_5_0_2 -> DragonFly_5_2_0
   DragonFly_5_2_0 -> DragonFly_5_2_1 -> DragonFly_5_2_2
   DragonFly_5_2_2 -> DragonFly_5_4_0 -> DragonFly_5_4_1 -> DragonFly_5_6 -> DragonFly_5_6_1 -> DragonFly_5_6_2 -> DragonFly_5_8
-  DragonFly_5_8 -> DragonFly_5_6_3 -> DragonFly_5_8_1 -> DragonFly_5_8_2 -> DragonFly_5_8_3 -> DragonFly_6_0 -> DragonFly_6_2_1 -> DragonFly_current
+  DragonFly_5_8 -> DragonFly_5_6_3 -> DragonFly_5_8_1 -> DragonFly_5_8_2 -> DragonFly_5_8_3 -> DragonFly_6_0 -> DragonFly_6_2_1 -> DragonFly_6_2_2 -> DragonFly_current
 }
