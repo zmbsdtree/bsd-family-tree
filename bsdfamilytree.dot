@@ -492,7 +492,6 @@ v1 -> v2 -> v3 -> v4 -> v5 -> v6 -> v7
   OpenBSD_2_8 -> OpenBSD_2_9 -> OpenBSD_3_0 -> OpenBSD_3_1 -> OpenBSD_3_2 -> OpenBSD_3_3 -> OpenBSD_3_4 -> OpenBSD_3_5 -> OpenBSD_3_6 -> OpenBSD_3_7 -> OpenBSD_3_8 -> OpenBSD_3_9 -> OpenBSD_4_0
   FreeBSD_6_0 -> FreeBSD_7_0 -> FreeBSD_8_0 -> FreeBSD_9_0
   FreeBSD_7_0 -> FreeBSD_7_1 -> FreeBSD_7_2 -> FreeBSD_7_3 -> FreeBSD_7_4
-  FreeBSD_7_1 -> FreeBSD_7_1_1 -> FreeBSD_7_1_2
   FreeBSD_8_0 -> FreeBSD_8_1 -> FreeBSD_8_2 -> FreeBSD_8_3 -> FreeBSD_8_4
   MacOSX_10_4 -> MacOSX_10_5 -> MacOSX_10_6 -> MacOSX_10_7 -> MacOSX_10_8
   NetBSD_3_0 -> NetBSD_4_0 -> NetBSD_5_0 -> NetBSD_6_0 -> NetBSD_7_0 -> NetBSD_8_0
