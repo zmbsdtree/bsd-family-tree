@@ -352,6 +352,8 @@ digraph unix_bsd_tree {
     OpenBSD_6_8	      [label="OpenBSD 6.8\n2020-10-18"]
     OpenBSD_6_9	      [label="OpenBSD 6.9\n2021-05-01"]
     OpenBSD_7_0	      [label="OpenBSD 7.0\n2021-10-14"]
+    OpenBSD_7_1	      [label="OpenBSD 7.1\n2022-04-21"]
+    OpenBSD_7_2	      [label="OpenBSD 7.2\n2022-10-20"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 
@@ -361,7 +363,7 @@ digraph unix_bsd_tree {
     OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
     OpenBSD_5_2 -> OpenBSD_5_3 -> OpenBSD_5_4 -> OpenBSD_5_5 -> OpenBSD_5_6 -> OpenBSD_5_7 -> OpenBSD_5_8 -> OpenBSD_5_9 -> OpenBSD_6_0
     OpenBSD_6_0 -> OpenBSD_6_1 -> OpenBSD_6_2 -> OpenBSD_6_3 -> OpenBSD_6_4
-    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_current
+    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_current
   
   }
 
