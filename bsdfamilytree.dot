@@ -270,6 +270,7 @@ digraph unix_bsd_tree {
     FreeBSD_12_3	     [label="FreeBSD 12.3\n2021-12-01"]
     FreeBSD_13_1	     [label="FreeBSD 13.1\n2022-05-17"]
     FreeBSD_12_4	     [label="FreeBSD 12.4\n2022-12-05"]
+    FreeBSD_13_2	     [label="FreeBSD 13.2\n2023-04-11"]
 
     FreeBSD_current    [label="FreeBSD 14 -current"]
 
@@ -290,7 +291,7 @@ digraph unix_bsd_tree {
     FreeBSD_9_1 -> FreeBSD_9_2 -> FreeBSD_9_3
     FreeBSD_9_0 -> FreeBSD_10_0 -> FreeBSD_10_1 -> FreeBSD_10_2 -> FreeBSD_10_3 -> FreeBSD_10_4
     FreeBSD_10_0 -> FreeBSD_11_0 -> FreeBSD_11_1 -> FreeBSD_11_2 -> FreeBSD_11_3 -> FreeBSD_11_4
-    FreeBSD_11_0 -> FreeBSD_12_0 -> FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_current
+    FreeBSD_11_0 -> FreeBSD_12_0 -> FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_current
     FreeBSD_12_0 -> FreeBSD_12_1 -> FreeBSD_12_2 -> FreeBSD_12_3 -> FreeBSD_12_4
   }
 
@@ -355,6 +356,7 @@ digraph unix_bsd_tree {
     OpenBSD_7_0	      [label="OpenBSD 7.0\n2021-10-14"]
     OpenBSD_7_1	      [label="OpenBSD 7.1\n2022-04-21"]
     OpenBSD_7_2	      [label="OpenBSD 7.2\n2022-10-20"]
+    OpenBSD_7_3	      [label="OpenBSD 7.3\n2023-04-11"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 
@@ -364,7 +366,7 @@ digraph unix_bsd_tree {
     OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
     OpenBSD_5_2 -> OpenBSD_5_3 -> OpenBSD_5_4 -> OpenBSD_5_5 -> OpenBSD_5_6 -> OpenBSD_5_7 -> OpenBSD_5_8 -> OpenBSD_5_9 -> OpenBSD_6_0
     OpenBSD_6_0 -> OpenBSD_6_1 -> OpenBSD_6_2 -> OpenBSD_6_3 -> OpenBSD_6_4
-    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_current
+    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_current
   
   }
 
@@ -605,7 +607,8 @@ digraph unix_bsd_tree {
   {rank = same; OpenBSD_7_0; macOS_12; }
   {rank = same; FreeBSD_12_3; DragonFly_6_2_1; FreeBSD_13_1 }
   {rank = same; DragonFly_6_2_2; NetBSD_9_3 }
-  {rank = same; OpenBSD_7_2; FreeBSD_12_4 }
+  {rank = same; OpenBSD_7_2; FreeBSD_12_4 ; DragonFly_6_4_0 }
+  {rank = same; OpenBSD_7_3; FreeBSD_13_2 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
