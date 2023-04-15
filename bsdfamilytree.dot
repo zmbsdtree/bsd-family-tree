@@ -501,12 +501,14 @@ digraph unix_bsd_tree {
     macOS_10_15_1	    [label="macOS 10.15.1\n2019-10-29"]
     macOS_11	        [label="macOS 11\n2020-11-19"]
     macOS_12	        [label="macOS 12\n2021-10-25"]
+    macOS_13	        [label="macOS 13\n2022-10-24"]
 
     Rhapsody -> MacOSX_10_0
     MacOSX_10_0 -> MacOSX_10_1 -> MacOSX_10_2 -> MacOSX_10_3 -> MacOSX_10_4
     MacOSX_10_4 -> MacOSX_10_5 -> MacOSX_10_6 -> MacOSX_10_7 -> MacOSX_10_8
     MacOSX_10_8 -> MacOSX_10_9 -> MacOSX_10_10 -> MacOSX_10_11
     MacOSX_10_11 -> macOS_10_12 -> macOS_10_13 -> macOS_10_14 -> macOS_10_15 -> macOS_10_15_1 -> macOS_11 -> macOS_12
+    macOS_12 -> macOS_13
   }
 
   {rank = same; v7; _2BSD;}
@@ -607,7 +609,7 @@ digraph unix_bsd_tree {
   {rank = same; OpenBSD_7_0; macOS_12; }
   {rank = same; FreeBSD_12_3; DragonFly_6_2_1; FreeBSD_13_1 }
   {rank = same; DragonFly_6_2_2; NetBSD_9_3 }
-  {rank = same; OpenBSD_7_2; FreeBSD_12_4 ; DragonFly_6_4_0 }
+  {rank = same; OpenBSD_7_2; FreeBSD_12_4 ; DragonFly_6_4_0; macOS_13 }
   {rank = same; OpenBSD_7_3; FreeBSD_13_2 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
