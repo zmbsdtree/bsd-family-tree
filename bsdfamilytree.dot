@@ -1,4 +1,4 @@
-# Copyright (c) 2022
+# Copyright (c) 2022-2023
 #   zmbsdtree <arales.p@gmail.com>
 #
 digraph unix_bsd_tree {
@@ -356,7 +356,7 @@ digraph unix_bsd_tree {
     OpenBSD_7_0	      [label="OpenBSD 7.0\n2021-10-14"]
     OpenBSD_7_1	      [label="OpenBSD 7.1\n2022-04-21"]
     OpenBSD_7_2	      [label="OpenBSD 7.2\n2022-10-20"]
-    OpenBSD_7_3	      [label="OpenBSD 7.3\n2023-04-11"]
+    OpenBSD_7_3	      [label="OpenBSD 7.3\n2023-04-10"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 

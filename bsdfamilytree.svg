@@ -3398,7 +3398,7 @@
 <title>OpenBSD_7_3</title>
 <ellipse fill="none" stroke="#cdcd00" cx="713.46" cy="-98.87" rx="79.81" ry="26.74"/>
 <text text-anchor="middle" x="713.46" y="-102.67" font-family="Times,serif" font-size="14.00">OpenBSD 7.3</text>
-<text text-anchor="middle" x="713.46" y="-87.67" font-family="Times,serif" font-size="14.00">2023&#45;04&#45;11</text>
+<text text-anchor="middle" x="713.46" y="-87.67" font-family="Times,serif" font-size="14.00">2023&#45;04&#45;10</text>
 </g>
 <!-- OpenBSD_7_2&#45;&gt;OpenBSD_7_3 -->
 <g id="edge246" class="edge">
