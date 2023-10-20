@@ -357,6 +357,7 @@ digraph unix_bsd_tree {
     OpenBSD_7_1	      [label="OpenBSD 7.1\n2022-04-21"]
     OpenBSD_7_2	      [label="OpenBSD 7.2\n2022-10-20"]
     OpenBSD_7_3	      [label="OpenBSD 7.3\n2023-04-10"]
+    OpenBSD_7_4	      [label="OpenBSD 7.4\n2023-10-16"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 
@@ -366,7 +367,7 @@ digraph unix_bsd_tree {
     OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
     OpenBSD_5_2 -> OpenBSD_5_3 -> OpenBSD_5_4 -> OpenBSD_5_5 -> OpenBSD_5_6 -> OpenBSD_5_7 -> OpenBSD_5_8 -> OpenBSD_5_9 -> OpenBSD_6_0
     OpenBSD_6_0 -> OpenBSD_6_1 -> OpenBSD_6_2 -> OpenBSD_6_3 -> OpenBSD_6_4
-    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_current
+    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_current
   
   }
 
@@ -502,13 +503,14 @@ digraph unix_bsd_tree {
     macOS_11	        [label="macOS 11\n2020-11-19"]
     macOS_12	        [label="macOS 12\n2021-10-25"]
     macOS_13	        [label="macOS 13\n2022-10-24"]
+    macOS_14	        [label="macOS 14\n2023-09-26"]
 
     Rhapsody -> MacOSX_10_0
     MacOSX_10_0 -> MacOSX_10_1 -> MacOSX_10_2 -> MacOSX_10_3 -> MacOSX_10_4
     MacOSX_10_4 -> MacOSX_10_5 -> MacOSX_10_6 -> MacOSX_10_7 -> MacOSX_10_8
     MacOSX_10_8 -> MacOSX_10_9 -> MacOSX_10_10 -> MacOSX_10_11
     MacOSX_10_11 -> macOS_10_12 -> macOS_10_13 -> macOS_10_14 -> macOS_10_15 -> macOS_10_15_1 -> macOS_11 -> macOS_12
-    macOS_12 -> macOS_13
+    macOS_12 -> macOS_13 -> macOS_14
   }
 
   {rank = same; v7; _2BSD;}
@@ -611,6 +613,7 @@ digraph unix_bsd_tree {
   {rank = same; DragonFly_6_2_2; NetBSD_9_3 }
   {rank = same; OpenBSD_7_2; FreeBSD_12_4 ; DragonFly_6_4_0; macOS_13 }
   {rank = same; OpenBSD_7_3; FreeBSD_13_2 }
+  {rank = same; OpenBSD_7_4; macOS_14 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
