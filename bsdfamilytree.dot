@@ -272,6 +272,7 @@ digraph unix_bsd_tree {
     FreeBSD_12_4	     [label="FreeBSD 12.4\n2022-12-05"]
     FreeBSD_13_2	     [label="FreeBSD 13.2\n2023-04-11"]
     FreeBSD_14_0	     [label="FreeBSD 14.0\n2023-11-20"]
+    FreeBSD_13_3	     [label="FreeBSD 13.3\n2024-03-05"]
 
     FreeBSD_current    [label="FreeBSD 15 -current"]
 
@@ -292,7 +293,7 @@ digraph unix_bsd_tree {
     FreeBSD_9_1 -> FreeBSD_9_2 -> FreeBSD_9_3
     FreeBSD_9_0 -> FreeBSD_10_0 -> FreeBSD_10_1 -> FreeBSD_10_2 -> FreeBSD_10_3 -> FreeBSD_10_4
     FreeBSD_10_0 -> FreeBSD_11_0 -> FreeBSD_11_1 -> FreeBSD_11_2 -> FreeBSD_11_3 -> FreeBSD_11_4
-    FreeBSD_11_0 -> FreeBSD_12_0 -> FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2
+    FreeBSD_11_0 -> FreeBSD_12_0 -> FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3
     FreeBSD_12_0 -> FreeBSD_12_1 -> FreeBSD_12_2 -> FreeBSD_12_3 -> FreeBSD_12_4
     FreeBSD_13_0 -> FreeBSD_14_0 -> FreeBSD_current
   }
