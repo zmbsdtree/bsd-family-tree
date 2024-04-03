@@ -148,7 +148,7 @@ digraph unix_bsd_tree {
     NetBSD_9_1	       [label="NetBSD 9.1\n2020-10-18"]
     NetBSD_9_2	       [label="NetBSD 9.2\n2021-05-12"]
     NetBSD_9_3	       [label="NetBSD 9.3\n2022-08-04"]
-    NetBSD_10_0	       [label="NetBSD 10.0\n2024-03-24"]
+    NetBSD_10_0	       [label="NetBSD 10.0\n2024-03-28"]
 
     NetBSD_current     [label="NetBSD -current"]
 

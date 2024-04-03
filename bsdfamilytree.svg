@@ -1570,7 +1570,7 @@
 <title>NetBSD_10_0</title>
 <ellipse fill="none" stroke="orange" cx="1080.35" cy="-102.05" rx="77.6" ry="30.05"/>
 <text text-anchor="middle" x="1080.35" y="-106" font-family="Times,serif" font-size="14.00">NetBSD 10.0</text>
-<text text-anchor="middle" x="1080.35" y="-88.75" font-family="Times,serif" font-size="14.00">2024&#45;03&#45;24</text>
+<text text-anchor="middle" x="1080.35" y="-88.75" font-family="Times,serif" font-size="14.00">2024&#45;03&#45;28</text>
 </g>
 <!-- NetBSD_9_0&#45;&gt;NetBSD_10_0 -->
 <g id="edge108" class="edge">
