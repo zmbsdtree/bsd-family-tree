@@ -363,6 +363,7 @@ digraph unix_bsd_tree {
     OpenBSD_7_2	      [label="OpenBSD 7.2\n2022-10-20"]
     OpenBSD_7_3	      [label="OpenBSD 7.3\n2023-04-10"]
     OpenBSD_7_4	      [label="OpenBSD 7.4\n2023-10-16"]
+    OpenBSD_7_5	      [label="OpenBSD 7.5\n2024-04-05"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 
@@ -372,7 +373,7 @@ digraph unix_bsd_tree {
     OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
     OpenBSD_5_2 -> OpenBSD_5_3 -> OpenBSD_5_4 -> OpenBSD_5_5 -> OpenBSD_5_6 -> OpenBSD_5_7 -> OpenBSD_5_8 -> OpenBSD_5_9 -> OpenBSD_6_0
     OpenBSD_6_0 -> OpenBSD_6_1 -> OpenBSD_6_2 -> OpenBSD_6_3 -> OpenBSD_6_4
-    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_current
+    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_7_5 -> OpenBSD_current
   
   }
 
@@ -619,7 +620,7 @@ digraph unix_bsd_tree {
   {rank = same; OpenBSD_7_2; FreeBSD_12_4 ; DragonFly_6_4_0; macOS_13 }
   {rank = same; OpenBSD_7_3; FreeBSD_13_2 }
   {rank = same; OpenBSD_7_4; macOS_14; FreeBSD_14_0 }
-  {rank = same; FreeBSD_13_3; NetBSD_10_0 }
+  {rank = same; FreeBSD_13_3; NetBSD_10_0; OpenBSD_7_5 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
