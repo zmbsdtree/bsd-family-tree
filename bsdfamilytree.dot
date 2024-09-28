@@ -149,6 +149,8 @@ digraph unix_bsd_tree {
     NetBSD_9_2	       [label="NetBSD 9.2\n2021-05-12"]
     NetBSD_9_3	       [label="NetBSD 9.3\n2022-08-04"]
     NetBSD_10_0	       [label="NetBSD 10.0\n2024-03-28"]
+    NetBSD_9_4	       [label="NetBSD 9.4\n2024-05-04"]
+    NetBSD_8_3	       [label="NetBSD 8.3\n2024-06-04"]
 
     NetBSD_current     [label="NetBSD -current"]
 
@@ -173,9 +175,9 @@ digraph unix_bsd_tree {
     NetBSD_7_0 -> NetBSD_7_0_1 -> NetBSD_7_0_2
     NetBSD_7_0 -> NetBSD_7_1 -> NetBSD_7_2
     NetBSD_7_1 -> NetBSD_7_1_1 -> NetBSD_7_1_2
-    NetBSD_8_0 -> NetBSD_8_1 -> NetBSD_8_2
-    NetBSD_9_0 -> NetBSD_9_1 -> NetBSD_9_2 -> NetBSD_9_3
+    NetBSD_8_0 -> NetBSD_8_1 -> NetBSD_8_2 -> NetBSD_8_3
     NetBSD_8_0 -> NetBSD_9_0 -> NetBSD_10_0
+    NetBSD_9_0 -> NetBSD_9_1 -> NetBSD_9_2 -> NetBSD_9_3 -> NetBSD_9_4
     NetBSD_10_0 -> NetBSD_current
   }
 
@@ -275,6 +277,7 @@ digraph unix_bsd_tree {
     FreeBSD_13_2	     [label="FreeBSD 13.2\n2023-04-11"]
     FreeBSD_14_0	     [label="FreeBSD 14.0\n2023-11-20"]
     FreeBSD_13_3	     [label="FreeBSD 13.3\n2024-03-05"]
+    FreeBSD_14_1	     [label="FreeBSD 14.1\n2024-06-04"]
 
     FreeBSD_current    [label="FreeBSD 15 -current"]
 
@@ -295,9 +298,13 @@ digraph unix_bsd_tree {
     FreeBSD_9_1 -> FreeBSD_9_2 -> FreeBSD_9_3
     FreeBSD_9_0 -> FreeBSD_10_0 -> FreeBSD_10_1 -> FreeBSD_10_2 -> FreeBSD_10_3 -> FreeBSD_10_4
     FreeBSD_10_0 -> FreeBSD_11_0 -> FreeBSD_11_1 -> FreeBSD_11_2 -> FreeBSD_11_3 -> FreeBSD_11_4
-    FreeBSD_11_0 -> FreeBSD_12_0 -> FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3
+    FreeBSD_11_0 -> FreeBSD_12_0
     FreeBSD_12_0 -> FreeBSD_12_1 -> FreeBSD_12_2 -> FreeBSD_12_3 -> FreeBSD_12_4
-    FreeBSD_13_0 -> FreeBSD_14_0 -> FreeBSD_current
+    FreeBSD_12_0 -> FreeBSD_13_0
+    FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3
+    FreeBSD_13_0 -> FreeBSD_14_0
+    FreeBSD_14_0 -> FreeBSD_14_1
+    FreeBSD_14_0 -> FreeBSD_current
   }
 
   subgraph OpenBSD_tree {
@@ -621,6 +628,7 @@ digraph unix_bsd_tree {
   {rank = same; OpenBSD_7_3; FreeBSD_13_2 }
   {rank = same; OpenBSD_7_4; macOS_14; FreeBSD_14_0 }
   {rank = same; FreeBSD_13_3; NetBSD_10_0; OpenBSD_7_5 }
+  {rank = same; FreeBSD_14_1; NetBSD_9_4; NetBSD_8_3 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
