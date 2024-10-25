@@ -1,4 +1,4 @@
-# Copyright (c) 2022-2023
+# Copyright (c) 2022-2024
 #   zmbsdtree <arales.p@gmail.com>
 #
 digraph unix_bsd_tree {
@@ -278,6 +278,7 @@ digraph unix_bsd_tree {
     FreeBSD_14_0	     [label="FreeBSD 14.0\n2023-11-20"]
     FreeBSD_13_3	     [label="FreeBSD 13.3\n2024-03-05"]
     FreeBSD_14_1	     [label="FreeBSD 14.1\n2024-06-04"]
+    FreeBSD_13_4	     [label="FreeBSD 13.4\n2024-09-17"]
 
     FreeBSD_current    [label="FreeBSD 15 -current"]
 
@@ -301,7 +302,7 @@ digraph unix_bsd_tree {
     FreeBSD_11_0 -> FreeBSD_12_0
     FreeBSD_12_0 -> FreeBSD_12_1 -> FreeBSD_12_2 -> FreeBSD_12_3 -> FreeBSD_12_4
     FreeBSD_12_0 -> FreeBSD_13_0
-    FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3
+    FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3 -> FreeBSD_13_4
     FreeBSD_13_0 -> FreeBSD_14_0
     FreeBSD_14_0 -> FreeBSD_14_1
     FreeBSD_14_0 -> FreeBSD_current
@@ -371,6 +372,7 @@ digraph unix_bsd_tree {
     OpenBSD_7_3	      [label="OpenBSD 7.3\n2023-04-10"]
     OpenBSD_7_4	      [label="OpenBSD 7.4\n2023-10-16"]
     OpenBSD_7_5	      [label="OpenBSD 7.5\n2024-04-05"]
+    OpenBSD_7_6	      [label="OpenBSD 7.6\n2024-10-08"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 
@@ -380,7 +382,7 @@ digraph unix_bsd_tree {
     OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
     OpenBSD_5_2 -> OpenBSD_5_3 -> OpenBSD_5_4 -> OpenBSD_5_5 -> OpenBSD_5_6 -> OpenBSD_5_7 -> OpenBSD_5_8 -> OpenBSD_5_9 -> OpenBSD_6_0
     OpenBSD_6_0 -> OpenBSD_6_1 -> OpenBSD_6_2 -> OpenBSD_6_3 -> OpenBSD_6_4
-    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_7_5 -> OpenBSD_current
+    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_7_5 -> OpenBSD_7_6 -> OpenBSD_current
   
   }
 
@@ -517,13 +519,14 @@ digraph unix_bsd_tree {
     macOS_12	        [label="macOS 12\n2021-10-25"]
     macOS_13	        [label="macOS 13\n2022-10-24"]
     macOS_14	        [label="macOS 14\n2023-09-26"]
+    macOS_15	        [label="macOS 15\n2024-09-16"]
 
     Rhapsody -> MacOSX_10_0
     MacOSX_10_0 -> MacOSX_10_1 -> MacOSX_10_2 -> MacOSX_10_3 -> MacOSX_10_4
     MacOSX_10_4 -> MacOSX_10_5 -> MacOSX_10_6 -> MacOSX_10_7 -> MacOSX_10_8
     MacOSX_10_8 -> MacOSX_10_9 -> MacOSX_10_10 -> MacOSX_10_11
     MacOSX_10_11 -> macOS_10_12 -> macOS_10_13 -> macOS_10_14 -> macOS_10_15 -> macOS_10_15_1 -> macOS_11 -> macOS_12
-    macOS_12 -> macOS_13 -> macOS_14
+    macOS_12 -> macOS_13 -> macOS_14 -> macOS_15
   }
 
   {rank = same; v7; _2BSD;}
@@ -629,6 +632,7 @@ digraph unix_bsd_tree {
   {rank = same; OpenBSD_7_4; macOS_14; FreeBSD_14_0 }
   {rank = same; FreeBSD_13_3; NetBSD_10_0; OpenBSD_7_5 }
   {rank = same; FreeBSD_14_1; NetBSD_9_4; NetBSD_8_3 }
+  {rank = same; macOS_15; FreeBSD_13_4; OpenBSD_7_6 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
