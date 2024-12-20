@@ -151,6 +151,7 @@ digraph unix_bsd_tree {
     NetBSD_10_0	       [label="NetBSD 10.0\n2024-03-28"]
     NetBSD_9_4	       [label="NetBSD 9.4\n2024-05-04"]
     NetBSD_8_3	       [label="NetBSD 8.3\n2024-06-04"]
+    NetBSD_10_1	       [label="NetBSD 10.1\n2024-12-16"]
 
     NetBSD_current     [label="NetBSD -current"]
 
@@ -178,6 +179,7 @@ digraph unix_bsd_tree {
     NetBSD_8_0 -> NetBSD_8_1 -> NetBSD_8_2 -> NetBSD_8_3
     NetBSD_8_0 -> NetBSD_9_0 -> NetBSD_10_0
     NetBSD_9_0 -> NetBSD_9_1 -> NetBSD_9_2 -> NetBSD_9_3 -> NetBSD_9_4
+    NetBSD_10_0 -> NetBSD_10_1
     NetBSD_10_0 -> NetBSD_current
   }
 
@@ -279,6 +281,7 @@ digraph unix_bsd_tree {
     FreeBSD_13_3	     [label="FreeBSD 13.3\n2024-03-05"]
     FreeBSD_14_1	     [label="FreeBSD 14.1\n2024-06-04"]
     FreeBSD_13_4	     [label="FreeBSD 13.4\n2024-09-17"]
+    FreeBSD_14_2	     [label="FreeBSD 14.2\n2024-12-03"]
 
     FreeBSD_current    [label="FreeBSD 15 -current"]
 
@@ -304,7 +307,7 @@ digraph unix_bsd_tree {
     FreeBSD_12_0 -> FreeBSD_13_0
     FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3 -> FreeBSD_13_4
     FreeBSD_13_0 -> FreeBSD_14_0
-    FreeBSD_14_0 -> FreeBSD_14_1
+    FreeBSD_14_0 -> FreeBSD_14_1 -> FreeBSD_14_2
     FreeBSD_14_0 -> FreeBSD_current
   }
 
