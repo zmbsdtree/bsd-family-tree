@@ -28,6 +28,7 @@ digraph unix_bsd_tree {
   }
 
   subgraph Berkeley_Software_Distribution{
+    rankdir=TB
     node [
       color = webpurple
     ];
@@ -73,6 +74,7 @@ digraph unix_bsd_tree {
   }
   
   subgraph NetBSD_tree {
+    rankdir=TB
     node [
       color = orange
     ];
@@ -184,6 +186,7 @@ digraph unix_bsd_tree {
   }
 
   subgraph FreeBSD_tree {
+    rankdir=TB
     node [
       color = brown
     ];
@@ -306,13 +309,18 @@ digraph unix_bsd_tree {
     FreeBSD_11_0 -> FreeBSD_12_0
     FreeBSD_12_0 -> FreeBSD_12_1 -> FreeBSD_12_2 -> FreeBSD_12_3 -> FreeBSD_12_4
     FreeBSD_12_0 -> FreeBSD_13_0
-    FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2 -> FreeBSD_13_3 -> FreeBSD_13_4 -> FreeBSD_13_5
+    FreeBSD_13_0 -> FreeBSD_13_1 -> FreeBSD_13_2
     FreeBSD_13_0 -> FreeBSD_14_0
-    FreeBSD_14_0 -> FreeBSD_14_1 -> FreeBSD_14_2
+    FreeBSD_13_2 -> FreeBSD_13_3
+    FreeBSD_14_0 -> FreeBSD_14_1
+    FreeBSD_13_3 -> FreeBSD_13_4
+    FreeBSD_14_1 -> FreeBSD_14_2
+    FreeBSD_13_4 -> FreeBSD_13_5
     FreeBSD_14_0 -> FreeBSD_current
   }
 
   subgraph OpenBSD_tree {
+    rankdir=TB
     node [
       color = yellow3
     ];
@@ -377,6 +385,7 @@ digraph unix_bsd_tree {
     OpenBSD_7_4	      [label="OpenBSD 7.4\n2023-10-16"]
     OpenBSD_7_5	      [label="OpenBSD 7.5\n2024-04-05"]
     OpenBSD_7_6	      [label="OpenBSD 7.6\n2024-10-08"]
+    OpenBSD_7_7	      [label="OpenBSD 7.7\n2025-04-28"]
 
     OpenBSD_current   [label="OpenBSD -current"]
 
@@ -386,12 +395,13 @@ digraph unix_bsd_tree {
     OpenBSD_4_0 -> OpenBSD_4_1 -> OpenBSD_4_2 -> OpenBSD_4_3 -> OpenBSD_4_4 -> OpenBSD_4_5 -> OpenBSD_4_6 -> OpenBSD_4_7 -> OpenBSD_4_8 -> OpenBSD_4_9 -> OpenBSD_5_0 -> OpenBSD_5_1 -> OpenBSD_5_2
     OpenBSD_5_2 -> OpenBSD_5_3 -> OpenBSD_5_4 -> OpenBSD_5_5 -> OpenBSD_5_6 -> OpenBSD_5_7 -> OpenBSD_5_8 -> OpenBSD_5_9 -> OpenBSD_6_0
     OpenBSD_6_0 -> OpenBSD_6_1 -> OpenBSD_6_2 -> OpenBSD_6_3 -> OpenBSD_6_4
-    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_7_5 -> OpenBSD_7_6 -> OpenBSD_current
+    OpenBSD_6_4 -> OpenBSD_6_5 -> OpenBSD_6_6 -> OpenBSD_6_7 -> OpenBSD_6_8 -> OpenBSD_6_9 -> OpenBSD_7_0 -> OpenBSD_7_1 -> OpenBSD_7_2 -> OpenBSD_7_3 -> OpenBSD_7_4 -> OpenBSD_7_5 -> OpenBSD_7_6 -> OpenBSD_7_7 -> OpenBSD_current
   
   }
 
 
   subgraph DragonFly_BSD_tree {
+    rankdir=TB
     node [
       color = forestgreen
     ];
@@ -448,9 +458,12 @@ digraph unix_bsd_tree {
     DragonFly_5_8_2    [label="DragonFly 5.8.2\n2020-09-23"]
     DragonFly_5_8_3    [label="DragonFly 5.8.3\n2020-09-24"]
     DragonFly_6_0_0    [label="DragonFly 6.0.0\n2021-05-08"]
+    DragonFly_6_0_1    [label="DragonFly 6.0.1\n2021-10-21"]
     DragonFly_6_2_1    [label="DragonFly 6.2.1\n2022-01-09"]
     DragonFly_6_2_2    [label="DragonFly 6.2.2\n2022-06-09"]
     DragonFly_6_4_0    [label="DragonFly 6.4.0\n2022-12-30"]
+    DragonFly_6_4_1    [label="DragonFly 6.4.1\n2025-04-30"]
+    DragonFly_6_4_2    [label="DragonFly 6.4.2\n2025-05-09"]
 
     DragonFly_current  [label="DragonFly -current"]
 
@@ -464,7 +477,7 @@ digraph unix_bsd_tree {
     DragonFly_5_0_0 ->  DragonFly_5_0_1 ->  DragonFly_5_0_2 -> DragonFly_5_2_0
     DragonFly_5_2_0 -> DragonFly_5_2_1 -> DragonFly_5_2_2
     DragonFly_5_2_2 -> DragonFly_5_4_0 -> DragonFly_5_4_1 -> DragonFly_5_6_0 -> DragonFly_5_6_1 -> DragonFly_5_6_2 -> DragonFly_5_8_0
-    DragonFly_5_8_0 -> DragonFly_5_6_3 -> DragonFly_5_8_1 -> DragonFly_5_8_2 -> DragonFly_5_8_3 -> DragonFly_6_0_0 -> DragonFly_6_2_1 -> DragonFly_6_2_2 -> DragonFly_6_4_0 -> DragonFly_current
+    DragonFly_5_8_0 -> DragonFly_5_6_3 -> DragonFly_5_8_1 -> DragonFly_5_8_2 -> DragonFly_5_8_3 -> DragonFly_6_0_0 -> DragonFly_6_0_1 -> DragonFly_6_2_1 -> DragonFly_6_2_2 -> DragonFly_6_4_0 -> DragonFly_6_4_1 -> DragonFly_6_4_2 -> DragonFly_current
   }
   subgraph BSDOS_tree {
     node [
@@ -494,6 +507,7 @@ digraph unix_bsd_tree {
 
 
   subgraph Apple_com_tree {
+    rankdir=TB
     node [
       color = red
     ];
@@ -617,8 +631,8 @@ digraph unix_bsd_tree {
   {rank = same; macOS_10_12; FreeBSD_11_0; NetBSD_7_0_2; }
   {rank = same; NetBSD_7_1; DragonFly_4_8_0; OpenBSD_6_1; }
   {rank = same; macOS_10_13; FreeBSD_10_4; OpenBSD_6_2; DragonFly_5_0_0;}
-  {rank = same;  DragonFly_5_0_2; NetBSD_7_1_1; }
-  {rank = same;  OpenBSD_6_3; DragonFly_5_2_0; }  
+  {rank = same; DragonFly_5_0_2; NetBSD_7_1_1; }
+  {rank = same; OpenBSD_6_3; DragonFly_5_2_0; }  
   {rank = same; DragonFly_5_2_2; FreeBSD_11_2; NetBSD_8_0; }
   {rank = same; NetBSD_7_2; macOS_10_14; OpenBSD_6_4; }
   {rank = same; DragonFly_5_4_0; FreeBSD_12_0; }
@@ -628,17 +642,16 @@ digraph unix_bsd_tree {
   {rank = same; DragonFly_5_6_3; NetBSD_8_2; }
   {rank = same; DragonFly_5_8_3; OpenBSD_6_8; NetBSD_9_1; FreeBSD_12_2; macOS_11; }
   {rank = same; FreeBSD_13_0; OpenBSD_6_9; DragonFly_6_0_0; NetBSD_9_2; }
-  {rank = same; OpenBSD_7_0; macOS_12; }
-  {rank = same; FreeBSD_12_3; DragonFly_6_2_1; FreeBSD_13_1 }
-  {rank = same; DragonFly_6_2_2; NetBSD_9_3 }
+  {rank = same; DragonFly_6_0_1; OpenBSD_7_0;  macOS_12; }
+  {rank = same; FreeBSD_12_3; DragonFly_6_2_1}
+  {rank = same; OpenBSD_7_1; FreeBSD_13_1; DragonFly_6_2_2; NetBSD_9_3 }
   {rank = same; OpenBSD_7_2; FreeBSD_12_4 ; DragonFly_6_4_0; macOS_13 }
   {rank = same; OpenBSD_7_3; FreeBSD_13_2 }
   {rank = same; OpenBSD_7_4; macOS_14; FreeBSD_14_0 }
-  {rank = same; FreeBSD_13_3; NetBSD_10_0; OpenBSD_7_5 }
-  {rank = same; FreeBSD_14_1; NetBSD_9_4; NetBSD_8_3 }
+  {rank = same; FreeBSD_13_3; NetBSD_10_0; OpenBSD_7_5 ; FreeBSD_14_1; NetBSD_9_4; NetBSD_8_3 }
   {rank = same; macOS_15; FreeBSD_13_4; OpenBSD_7_6 }
   {rank = same; FreeBSD_14_2; NetBSD_10_1 }
-  {rank = same; FreeBSD_13_5 }
+  {rank = same; FreeBSD_13_5; OpenBSD_7_7; DragonFly_6_4_1 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
