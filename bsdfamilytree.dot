@@ -287,8 +287,9 @@ digraph unix_bsd_tree {
     FreeBSD_14_2	     [label="FreeBSD 14.2\n2024-12-03"]
     FreeBSD_13_5	     [label="FreeBSD 13.5\n2025-03-11"]
     FreeBSD_14_3	     [label="FreeBSD 14.3\n2025-06-10"]
+    FreeBSD_15_0	     [label="FreeBSD 15.0\n2025-12-02"]
 
-    FreeBSD_current    [label="FreeBSD 15 -current"]
+    FreeBSD_current    [label="FreeBSD 16 -current"]
 
     FreeBSD_1_0 -> FreeBSD_1_1 -> FreeBSD_1_1_5 -> FreeBSD_1_1_5_1 -> FreeBSD_2_0 -> FreeBSD_2_0_5 -> FreeBSD_2_1
     FreeBSD_2_1 -> FreeBSD_2_1_5 -> FreeBSD_2_1_6 -> FreeBSD_2_1_6_1 -> FreeBSD_2_1_7 -> FreeBSD_2_1_7_1
@@ -317,7 +318,8 @@ digraph unix_bsd_tree {
     FreeBSD_13_3 -> FreeBSD_13_4
     FreeBSD_14_1 -> FreeBSD_14_2 -> FreeBSD_14_3
     FreeBSD_13_4 -> FreeBSD_13_5
-    FreeBSD_14_0 -> FreeBSD_current
+    FreeBSD_14_0 -> FreeBSD_15_0
+    FreeBSD_15_0 -> FreeBSD_current
   }
 
   subgraph OpenBSD_tree {
@@ -657,8 +659,7 @@ digraph unix_bsd_tree {
   {rank = same; macOS_15; FreeBSD_13_4; OpenBSD_7_6 }
   {rank = same; FreeBSD_14_2; NetBSD_10_1 }
   {rank = same; FreeBSD_13_5; OpenBSD_7_7; DragonFly_6_4_1 }
-  {rank = same; FreeBSD_14_3; DragonFly_6_4_2 }
-  {rank = same; macOS_26; OpenBSD_7_8 }
+  {rank = same; macOS_26; OpenBSD_7_8; FreeBSD_15_0 }
   {rank = sink; FreeBSD_current; NetBSD_current; OpenBSD_current; DragonFly_current; }
 
   _4_1cBSD -> v8
