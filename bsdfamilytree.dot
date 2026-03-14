@@ -288,6 +288,7 @@ digraph unix_bsd_tree {
     FreeBSD_13_5	     [label="FreeBSD 13.5\n2025-03-11"]
     FreeBSD_14_3	     [label="FreeBSD 14.3\n2025-06-10"]
     FreeBSD_15_0	     [label="FreeBSD 15.0\n2025-12-02"]
+    FreeBSD_14_4	     [label="FreeBSD 14.4\n2026-03-10"]
 
     FreeBSD_current    [label="FreeBSD 16 -current"]
 
@@ -316,7 +317,7 @@ digraph unix_bsd_tree {
     FreeBSD_13_2 -> FreeBSD_13_3
     FreeBSD_14_0 -> FreeBSD_14_1
     FreeBSD_13_3 -> FreeBSD_13_4
-    FreeBSD_14_1 -> FreeBSD_14_2 -> FreeBSD_14_3
+    FreeBSD_14_1 -> FreeBSD_14_2 -> FreeBSD_14_3 -> FreeBSD_14_4
     FreeBSD_13_4 -> FreeBSD_13_5
     FreeBSD_14_0 -> FreeBSD_15_0
     FreeBSD_15_0 -> FreeBSD_current
