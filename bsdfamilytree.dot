@@ -157,6 +157,7 @@ digraph unix_bsd_tree {
     NetBSD_11_0	       [label="NetBSD 11.0\n2026-07-30"]
     NetBSD_9_5	       [label="NetBSD 9.5\n2026-08-31"]
     NetBSD_10_2	       [label="NetBSD 10.2\n2026-09-15"]
+    NetBSD_11_1	       [label="NetBSD 11.1\n2026-11-03"]
 
     NetBSD_current     [label="NetBSD -current"]
 
@@ -186,7 +187,7 @@ digraph unix_bsd_tree {
     NetBSD_9_0 -> NetBSD_9_1 -> NetBSD_9_2 -> NetBSD_9_3 -> NetBSD_9_4 -> NetBSD_9_5
     NetBSD_10_0 -> NetBSD_10_1 -> NetBSD_10_2
     NetBSD_10_0 -> NetBSD_11_0
-    NetBSD_11_0 -> NetBSD_current
+    NetBSD_11_0 -> NetBSD_11_1 -> NetBSD_current
   }
 
   subgraph FreeBSD_tree {
